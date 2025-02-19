@@ -6,6 +6,7 @@
 ## Installation
 ### [Flutter Setup on Windows](#flutter-setup-on-windows) 
 ### [Flutter setup on MacOs](#flutter-setup-on-macos)
+<a name="flutter-setup-on-macos"></a>
 
 ## Flutter Setup on Windows
 This guide provides step-by-step instructions to install Flutter and all necessary dependencies for developing mobile applications on a Windows system.
@@ -74,7 +75,7 @@ Your Windows system is now ready for Flutter development. You can create new Flu
 
 Happy coding!
 
-<a name="flutter-setup-on-macos"></a>
+
 ## Flutter setup on MacOs
 This guide provides step-by-step instructions to set up Flutter and the required tools for both Android and iOS development on macOS.
 
