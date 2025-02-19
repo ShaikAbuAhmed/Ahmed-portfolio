@@ -10,7 +10,7 @@
 ## Flutter Setup on Windows
 This guide provides step-by-step instructions to install Flutter and all necessary dependencies for developing mobile applications on a Windows system.
 
-## Step 1: Download and Install Git
+### Step 1: Download and Install Git
 Flutter requires Git to be installed on your system. Follow these steps:
 1. Visit the [official Git website](https://git-scm.com/download/win).
 2. Download the appropriate version for your Windows system.
@@ -18,13 +18,13 @@ Flutter requires Git to be installed on your system. Follow these steps:
 4. **Important:** Select **"Use Git and optional Unix tools from Command Prompt"** during installation.
 5. Complete the installation and restart your system if necessary.
 
-## Step 2: Download and Install Flutter
+### Step 2: Download and Install Flutter
 1. Go to the [official Flutter website](https://flutter.dev/).
 2. Click on **Get Started** and select **Windows**.
 3. Download the latest Flutter SDK as a ZIP file.
 4. Extract the ZIP file and move the `flutter` folder to a directory (e.g., `C:\SRC\flutter`).
 
-## Step 3: Add Flutter to System Path
+### Step 3: Add Flutter to System Path
 1. Open the Windows search bar and type **"env"**, then select **"Edit the system environment variables"**.
 2. Click **Environment Variables**.
 3. Under **User Variables**, find and select the `Path` variable, then click **Edit**.
@@ -32,21 +32,21 @@ Flutter requires Git to be installed on your system. Follow these steps:
 5. Click **OK** and close all dialog boxes.
 6. Restart your system or reopen the command prompt.
 
-## Step 4: Verify Flutter Installation
+### Step 4: Verify Flutter Installation
 1. Open **Command Prompt** and run the following command:
    ```sh
    flutter doctor ```
 3. You should see Flutter and Windows options as [✅]
 2. If you see errors, they may relate to missing dependencies such as the Android toolchain.
 
-## Step 5: Install Android Studio
+### Step 5: Install Android Studio
 Flutter requires Android Studio for Android development:
 1. Download Android Studio from the [official website](https://developer.android.com/studio).
 2. Run the installer and follow the setup wizard.
 3. **Ensure you install the Android Virtual Device (AVD) and Android SDK.**
 4. Launch Android Studio and complete the setup wizard.
 
-## Step 6: Configure Android SDK and Emulator
+### Step 6: Configure Android SDK and Emulator
 1. Open Android Studio and navigate to **More Actions > SDK Manager**.
 2. Under **SDK Platforms**, select the latest stable Android version.
 3. Under **SDK Tools**, ensure the following are selected:
@@ -62,14 +62,14 @@ Flutter requires Android Studio for Android development:
 10. Click **Finish** to create the virtual device.
 11. Start the emulator by clicking the **Play** button.
 
-## Step 7: Final Verification
+### Step 7: Final Verification
 1. Open **Command Prompt** and run:
    ```sh
    flutter doctor
    ```
 2. Ensure all checks [✅] are complete we are having an option to choose between Visual Studio and Android Studio So No worries if Visual studio Comes [❌].
 
-## Conclusion
+### Conclusion
 Your Windows system is now ready for Flutter development. You can create new Flutter projects and run them on an emulator or real device. For any issues, refer to the [official Flutter documentation](https://docs.flutter.dev/get-started/install/windows).
 
 Happy coding!
@@ -78,7 +78,7 @@ Happy coding!
 ## Flutter setup on MacOs
 This guide provides step-by-step instructions to set up Flutter and the required tools for both Android and iOS development on macOS.
 
-## 1. Install Git
+### Step 1. Install Git
 Git is required for Flutter development. It is installed automatically with Xcode, but you can also install it separately:
 
 ```sh
@@ -91,12 +91,12 @@ For Apple Silicon (M1, M2, etc.), run the following command in the terminal:
 sudo softwareupdate --install-rosetta --agree-to-license
 ```
 
-## 2. Install Flutter SDK
+### Step 2. Install Flutter SDK
 1. Visit the [Flutter official website](https://flutter.dev/docs/get-started/install/macos).
 2. Download the appropriate Flutter SDK version based on your Mac's architecture (Intel or Apple Silicon).
 3. Extract the downloaded `.zip` file and move it to a preferred location, e.g., `~/Developer/flutter`.
 
-## 3. Add Flutter to System Path
+### Step 3. Add Flutter to System Path
 To permanently add Flutter to your system path:
 
 1. Determine the shell you are using:
@@ -129,7 +129,7 @@ To permanently add Flutter to your system path:
    flutter --version
    ```
 
-## 4. Install Xcode (for iOS Development)
+### Step 4. Install Xcode (for iOS Development)
 1. Download and install Xcode from the Mac App Store.
 2. Accept the Xcode license agreement:
    ```sh
@@ -144,7 +144,7 @@ To permanently add Flutter to your system path:
    flutter doctor
    ```
 
-## 5. Install Android Studio (for Android Development)
+### Step 5. Install Android Studio (for Android Development)
 1. Download [Android Studio](https://developer.android.com/studio) and install it.
 2. Open Android Studio and complete the setup wizard.
 3. Install the required SDK components:
@@ -164,7 +164,7 @@ To permanently add Flutter to your system path:
    flutter doctor
    ```
 
-## 6. Setup iOS Simulator
+### Step 6. Setup iOS Simulator
 1. Open Xcode.
 2. Navigate to `Xcode` > `Settings` > `Components`.
 3. Install an iOS Simulator.
@@ -173,7 +173,7 @@ To permanently add Flutter to your system path:
    open -a Simulator
    ```
 
-## 7. Setup Android Emulator
+### Step 7. Setup Android Emulator
 1. Open Android Studio.
 2. Go to `More Actions` > `Virtual Device Manager`.
 3. Create a new device (e.g., Pixel 6).
@@ -187,7 +187,7 @@ To permanently add Flutter to your system path:
    emulator -avd your_emulator_name
    ```
 
-## 8. Verify Flutter Installation
+### Step 8. Verify Flutter Installation
 Run the following command to check if everything is set up correctly:
 ```sh
 flutter doctor
