@@ -1,10 +1,9 @@
 # Milo
 ## Table of contents 
-- [Description](#description)
 - [Installation](#installation)
 ## Installation
- 1:Flutter Setup on Windows
- 2:Flutter setup on Macos
+### [Flutter Setup on Windows](#Flutter Setup on Windows) 
+### [Flutter setup on Macos](### Flutter Setup on Windows)
 ## Flutter Setup on Windows
 This guide provides step-by-step instructions to install Flutter and all necessary dependencies for developing mobile applications on a Windows system.
 ## Step 1: Download and Install Git
@@ -71,3 +70,4 @@ Your Windows system is now ready for Flutter development. You can create new Flu
 
 Happy coding!
 
+## Flutter Setup on Windows
