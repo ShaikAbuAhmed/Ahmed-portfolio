@@ -1,11 +1,15 @@
 # Milo
+
 ## Table of contents 
 - [Installation](#installation)
+
 ## Installation
-### [Flutter Setup on Windows](#Flutter Setup on Windows) 
-### [Flutter setup on Macos](### Flutter Setup on Windows)
+### [Flutter Setup on Windows](#flutter-setup-on-windows) 
+### [Flutter setup on MacOs](#flutter-setup-on-macos)
+
 ## Flutter Setup on Windows
 This guide provides step-by-step instructions to install Flutter and all necessary dependencies for developing mobile applications on a Windows system.
+
 ## Step 1: Download and Install Git
 Flutter requires Git to be installed on your system. Follow these steps:
 1. Visit the [official Git website](https://git-scm.com/download/win).
@@ -31,8 +35,8 @@ Flutter requires Git to be installed on your system. Follow these steps:
 ## Step 4: Verify Flutter Installation
 1. Open **Command Prompt** and run the following command:
    ```sh
-   flutter doctor
-3. You should see Flutter and Windows options as [✅]   ```
+   flutter doctor ```
+3. You should see Flutter and Windows options as [✅]
 2. If you see errors, they may relate to missing dependencies such as the Android toolchain.
 
 ## Step 5: Install Android Studio
@@ -63,11 +67,133 @@ Flutter requires Android Studio for Android development:
    ```sh
    flutter doctor
    ```
-2. Ensure all checks are complete we are having an option to choose between Visual Studio and Android Studio So No worries if Visual studio Comes [❌].
+2. Ensure all checks [✅] are complete we are having an option to choose between Visual Studio and Android Studio So No worries if Visual studio Comes [❌].
 
 ## Conclusion
 Your Windows system is now ready for Flutter development. You can create new Flutter projects and run them on an emulator or real device. For any issues, refer to the [official Flutter documentation](https://docs.flutter.dev/get-started/install/windows).
 
 Happy coding!
 
-## Flutter Setup on Windows
+## Flutter setup on MacOs
+This guide provides step-by-step instructions to set up Flutter and the required tools for both Android and iOS development on macOS.
+
+## 1. Install Git
+Git is required for Flutter development. It is installed automatically with Xcode, but you can also install it separately:
+
+```sh
+xcode-select --install
+```
+
+For Apple Silicon (M1, M2, etc.), run the following command in the terminal:
+
+```sh
+sudo softwareupdate --install-rosetta --agree-to-license
+```
+
+## 2. Install Flutter SDK
+1. Visit the [Flutter official website](https://flutter.dev/docs/get-started/install/macos).
+2. Download the appropriate Flutter SDK version based on your Mac's architecture (Intel or Apple Silicon).
+3. Extract the downloaded `.zip` file and move it to a preferred location, e.g., `~/Developer/flutter`.
+
+## 3. Add Flutter to System Path
+To permanently add Flutter to your system path:
+
+1. Determine the shell you are using:
+
+   ```sh
+   echo $SHELL
+   ```
+
+2. Open the respective profile configuration file:
+   - For `zsh` (default on macOS Catalina and later):
+     ```sh
+     nano ~/.zshrc
+     ```
+   - For `bash`:
+     ```sh
+     nano ~/.bash_profile
+     ```
+
+3. Add the following line (update the path accordingly):
+   ```sh
+   export PATH="$PATH:/Users/your-username/Developer/flutter/bin"
+   ```
+4. Save the file and apply changes:
+   ```sh
+   source ~/.zshrc  # or source ~/.bash_profile
+   ```
+
+5. Verify the installation:
+   ```sh
+   flutter --version
+   ```
+
+## 4. Install Xcode (for iOS Development)
+1. Download and install Xcode from the Mac App Store.
+2. Accept the Xcode license agreement:
+   ```sh
+   sudo xcodebuild -license
+   ```
+3. Install required command-line tools:
+   ```sh
+   sudo xcode-select --install
+   ```
+4. Verify Xcode installation:
+   ```sh
+   flutter doctor
+   ```
+
+## 5. Install Android Studio (for Android Development)
+1. Download [Android Studio](https://developer.android.com/studio) and install it.
+2. Open Android Studio and complete the setup wizard.
+3. Install the required SDK components:
+   - Open `SDK Manager` (from `More Actions` in the welcome screen).
+   - Under `SDK Platforms`, install the latest Android SDK.
+   - Under `SDK Tools`, install:
+     - Android SDK Command-line Tools
+     - Android Emulator
+     - Android SDK Build Tools
+     - Android SDK Platform Tools
+4. Accept Android licenses:
+   ```sh
+   flutter doctor --android-licenses
+   ```
+5. Verify installation:
+   ```sh
+   flutter doctor
+   ```
+
+## 6. Setup iOS Simulator
+1. Open Xcode.
+2. Navigate to `Xcode` > `Settings` > `Components`.
+3. Install an iOS Simulator.
+4. Run an iOS simulator:
+   ```sh
+   open -a Simulator
+   ```
+
+## 7. Setup Android Emulator
+1. Open Android Studio.
+2. Go to `More Actions` > `Virtual Device Manager`.
+3. Create a new device (e.g., Pixel 6).
+4. Choose the latest Android version and install it if necessary.
+5. Enable hardware acceleration (recommended):
+   ```sh
+   sudo sysctl -w hw.virtualization=1
+   ```
+6. Start the emulator:
+   ```sh
+   emulator -avd your_emulator_name
+   ```
+
+## 8. Verify Flutter Installation
+Run the following command to check if everything is set up correctly:
+```sh
+flutter doctor
+```
+You should see checkmarks for Flutter, Xcode, Android Studio, and the required dependencies.
+
+---
+You are now ready to create and run Flutter projects on macOS! 🎉
+
+
