@@ -74,6 +74,7 @@ Your Windows system is now ready for Flutter development. You can create new Flu
 
 Happy coding!
 
+
 ## Flutter setup on MacOs
 This guide provides step-by-step instructions to set up Flutter and the required tools for both Android and iOS development on macOS.
 
@@ -193,7 +194,8 @@ flutter doctor
 ```
 You should see checkmarks for Flutter, Xcode, Android Studio, and the required dependencies.
 
----
-You are now ready to create and run Flutter projects on macOS! 🎉
+## Conclusion
+Your Windows system is now ready for Flutter development. You can create new Flutter projects and run them on an emulator or real device. For any issues, refer to the [official Flutter documentation](https://docs.flutter.dev/get-started/install/macos/mobile-ios).
 
+Happy coding!
 
